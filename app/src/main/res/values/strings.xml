@@ -5,4 +5,8 @@
     <string name="octa_allowed_digits">01234567</string>
     <string name="hexadecimal_allowed_digits">0123456789abc-def</string>
     <string name="binary_allowed_digits">01</string>
+    <string name="decimal_name">Decimal</string>
+    <string name="octal_name">Octal</string>
+    <string name="hexadecimal_name">HexaDecimal</string>
+    <string name="binary_name">Binary</string>
 </resources>
