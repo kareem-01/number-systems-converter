@@ -89,7 +89,9 @@
                 android:digits="@string/binary_allowed_digits"
                 android:hint="@string/binary_name"
                 android:inputType="number"
-                android:minHeight="@dimen/minimum_text_height" />
+                android:minHeight="@dimen/minimum_text_height"
+                android:textColor="#FFFFFF"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -100,7 +102,6 @@
 
             android:layout_marginHorizontal="@dimen/clear_horizontal_margin"
             android:layout_marginTop="@dimen/button_margin_top"
-            android:background="@drawable/numbers_background"
             android:paddingHorizontal="46dp"
             android:paddingVertical="@dimen/clear_button_vertical_padding"
             android:text="@string/button_clear" />
