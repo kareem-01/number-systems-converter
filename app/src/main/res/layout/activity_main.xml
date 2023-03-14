@@ -4,26 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@color/image_background_color"
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/parent_layout_padding_horizontal"
-    tools:context=".MainActivity"
-    android:background="#2D2D2D"
-      >
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="300dp"
             android:background="@drawable/image_person" />
-
-        <!--        <ImageView-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="156dp"-->
-        <!--            android:background="@drawable/calculator_pic" />-->
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -40,6 +34,7 @@
                 android:digits="@string/decimal_allowed_digits"
                 android:hint="@string/decimal_name"
                 android:inputType="number"
+                android:maxLength="10"
                 android:minHeight="@dimen/minimum_text_height" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,9 +51,8 @@
                 android:digits="@string/octa_allowed_digits"
                 android:hint="@string/octal_name"
                 android:inputType="number"
-                android:minHeight="@dimen/minimum_text_height"
-
-                />
+                android:maxLength="10"
+                android:minHeight="@dimen/minimum_text_height" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -73,7 +67,9 @@
                 android:background="@drawable/numbers_background"
                 android:digits="@string/hexadecimal_allowed_digits"
                 android:hint="@string/hexadecimal_name"
+                android:maxLength="10"
                 android:minHeight="@dimen/minimum_text_height" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -89,14 +85,13 @@
                 android:digits="@string/binary_allowed_digits"
                 android:hint="@string/binary_name"
                 android:inputType="number"
-                android:minHeight="@dimen/minimum_text_height"
-                android:textColor="#FFFFFF"
-                />
+                android:maxLength="10"
+                android:minHeight="@dimen/minimum_text_height" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/clearButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
 
@@ -104,7 +99,9 @@
             android:layout_marginTop="@dimen/button_margin_top"
             android:paddingHorizontal="46dp"
             android:paddingVertical="@dimen/clear_button_vertical_padding"
-            android:text="@string/button_clear" />
+            android:text="@string/button_clear"
+
+            />
 
 
     </LinearLayout>
